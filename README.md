@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Responsive Landing Page - Next.js & Tailwind CSS
 
-## Getting Started
+## Overview
+This project is a responsive landing page built using **Next.js** and **Tailwind CSS**. The objective was to replicate the **navbar,** **footer** and **two sections** from the reference website ([SODS](https://www.sods.sk.ca/)), ensuring design consistency, responsiveness, and performance optimization.
 
-First, run the development server:
+## Features
+- **Fully responsive design** across all devices.
+- **Custom navigation bar** with a dropdown for mobile and desktop views.
+- **Curve background implementation** similar to the reference website.
+- **Reusable Tailwind components** for better maintainability.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Tech Stack
+- **Next.js** - Framework for React with server-side rendering.
+- **Tailwind CSS** - Utility-first CSS framework for styling.
+- **Vercel** - For deployment (optional but preferred).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Problems Faced & Solutions
+### 1. Custom Navigation Bar & Dropdown Behavior
+- **Problem:** Initially, I struggled to create the **navigation dropdown**, especially since its display differs between desktop and mobile views.
+- **Solution:** I broke the navigation bar into **separate components** and handled the dropdown using **conditional rendering**. I also created a **separate mobile menu component** for better manageability and a smoother user experience.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 2. Curve Background Implementation
+- **Problem:** I was unsure how to replicate the **curved background** from the reference website.
+- **Solution:** I inspected the website’s styles and used **SVGs** to achieve the desired effect successfully.
+ 
+## How to Run the Project
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/monishatBaishnab/SODS.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd SODS
+   ```
+3. Install dependencies:
+   ```bash
+   npm install  # or yarn install
+   ```
+4. Run the development server:
+   ```bash
+   npm run dev  # or yarn dev
+   ```
+5. Open `http://localhost:3000` in your browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Live Demo
+[Live Preview](https://sods-five.vercel.app/)
 
-## Learn More
+## Contact
+- [**GitHub**](https://github.com/monishatBaishnab)
+- [**LinkedIn**](https://www.linkedin.com/in/monishat-baishnab666/)
+- baishnabmonishta@gmail.com
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
